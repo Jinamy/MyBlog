@@ -1,0 +1,84 @@
+body{
+    font-size:16px;
+    font-family: "华文楷体", serif;
+    color: #111111;
+
+}
+
+.container{
+    width:  100%;
+    margin: 20px auto;
+    height: 99%;
+    padding: 20px auto;
+    /*position: relative;
+   order:1px solid #999;
+   设为盒子模型
+   display:-moz-box;
+   display: -webkit-box;*/
+
+
+}
+nav{
+    text-align: center;
+    width: 90%;
+    height: auto;
+    margin: 20px;
+}
+ol,ul{
+    list-style: none;
+    display: block;
+}
+ul li{
+
+    float: left;
+    width: 200px;
+    height: 50px;
+    line-height: 60px;
+    margin-left: 50px;
+    padding: 10px;
+    border: 2px solid #333;
+    text-align: center;
+    font-size: 40px;
+}
+#top,#end{
+    width: 95%;
+    margin: 10px auto;
+    padding: 0 auto;
+    border:1px solid #000;
+    vertical-align: center;
+}
+.content{
+    width: 100%;
+    height: auto;
+    margin:20px 100px;
+    padding:20px 20px;
+    display: block;
+}
+#footer{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin:10px auto;
+    padding-top:50px;
+    text-align:center;
+    clear: both;
+}
+/*.scroll{
+    margin: 0 auto;
+    width: 100%;
+}
+.pictureBox{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+}
+.scroll_list{
+    width: 100%;
+    position: absolute;
+}
+.scroll_list ol{
+    margin: 0 auto;
+    padding: 0;
+}*/
