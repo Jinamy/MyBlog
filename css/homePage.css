@@ -8,7 +8,7 @@ body{
 .container{
     width:  100%;
     margin: 20px auto;
-    height: 99%;
+    height: 100%;
     padding: 20px auto;
     /*position: relative;
    order:1px solid #999;
@@ -64,22 +64,4 @@ ul li{
     text-align:center;
     clear: both;
 }
-/*.scroll{
-    margin: 0 auto;
-    width: 100%;
-}
-.pictureBox{
-    height: 250px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
 
-}
-.scroll_list{
-    width: 100%;
-    position: absolute;
-}
-.scroll_list ol{
-    margin: 0 auto;
-    padding: 0;
-}*/
