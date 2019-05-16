@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="../css/article.css">
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="../js/article.js"></script>
+</head>
+<body>
+    <div  class="container">
+        <header class="head"><span><h1> J I N A M Y </h1></span></header>
+
+        <nav id="list">
+            <span id="newP">最新章节</span>
+            <hr style="border:1px solid #5cb85c;margin:0 35px;padding-top:0;">
+        </nav>
+        <div class="content">
+            <article>
+                <div class="main">
+                    <h1>核心技术——DOM</h1>
+                    <section><h3>DOM对象</h3>
+                    DOM(Document Object Model 文档对象模型) DOM操作，可看成是“元素操作”；
+                    </section>
+                    <section><h3>DOM结构</h3>
+                    <p>DOM采用的是“树形结构”，用“树节点”形式来表示页面中的每一个元素，html是根节点，即根元素，head和body是兄弟节点。当操作元素时，就是把这个对象的属性和方法进行相关操作。DOM节点类型共有12中，常见的有元素节点，属性节点，文本节点。<br>
+                        注！节点包括元素。<br>
+                        nodeType属性判断一个节点类型，其值是数字，
+                    </p>
+                    <table style="border:1px solid #2E2E2E;">
+                        <th>不同节点的nodeType属性值</th>
+                        <tr><td>节点类型</td><td>nodeType值</td></tr>
+                        <tr><td>元素节点</td><td>1</td></tr>
+                        <tr><td>属性节点</td><td>2</td></tr>
+                        <tr><td>文本节点</td><td>3</td></tr>
+                    </table>
+                    <p>属性节点和文本节点是独立节点，并不属于元素节点，只有元素节点才可以拥有子节点，而其他两个都无法拥有子节点。</p>
+                    </section>
+                    <section>
+                    <h3>获取元素</h3>
+                    <p>获取元素就是获取元素节点（不是属性节点或文本节点）对于一个页面，若要对某个元素进行操作，只有获取到该元素才能对其进行操作。可通过六种方式获取，如下：</p>
+                    <ul>
+                        <li>getElmentById()</li>
+                        <li>getElementsByTagName()
+                            <p>通过标签名选择元素 该方法获取的是一堆元素，即一个数组，叫“类数组”（也叫伪数组）数组只能用到length属性和下标<br>
+                                <strong>语法：document.getElementsByTagName("标签名")</strong><br>
+                                document.getElementsByTagName("li")获取的是整个页面的li元素，但是此处只获取ul下的li元素
+                            </p>
+                        </li>
+                        <li class="select">getElememtsByClassName()</li>
+                        <li class="select">querySelector()和querySelectorAll()</li>
+                        <li>getElementsByName()</li>
+                        <li>document.title和document.body</li>
+                    </ul>
+                    <strong>注！JavaScript是严格区分大小写</strong>
+                    </section>
+                    <section>
+                        <h4>总结</h4>
+                        <div class="box">
+
+                                1.getElementById()与getElementsByTagName()的区别：
+                            <ul>
+                                <li>
+                                    getElementById()获取的是一个元素，而getElementsByTagName()函数获取的是多个元素（伪数组）。
+                                </li>
+                                <li>
+                                    getElementById()前面只可以接document，也就是document.getElementById();而getElementsByTagName()前面不仅可以接document，还可以接接其他DOM对象。
+                                </li>
+                                <li>
+                                    getElementById()不可以操作动态创建的DOM对象，而getElementByTagName()可以。
+                                </li>
+                            </ul>
+                            2.getElementsByClassName()通过class选中元素，用法与getElementsByTagName()相似，但是不可操作动态DOM。<br>
+                            3.querySelector()和querySelectorAll()通过CSS选择器的语法来获取元素；querySelector()表示选取满足条件的第一个元素，querySelectorAll()表示选取满足条件的所有元素。对于id选择器来说，由于页面只有一个元素，推荐使用getElementById(),因为getElementById()方法效率更高，性能也更快。<br>
+                            4.对于表单元素来说，当一个普通元素没有name属性时，如果想要通过name属性来获取表单元素，可以通过getElementByName()方法来实现。它获取的是一个类数组，通过下标的形式来获取，只用于表单元素，一般用于单选按钮和复选框。<br>
+                            语法：document.getElementByName("name名")<br>
+                            例1：
+                            <label>
+                                <input type="radio" name="status" value="本科" />本科
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="硕士" />硕士
+                            </label>
+                            <label>
+                                <input type="radio" name="status" value="博士" />博士
+                            </label>
+                            <br>
+                            例2：你最喜欢的颜色：
+                            <label>
+                                <input type="checkbox" name="color" value="红色" />红色
+                            </label>
+                            <label>
+                                <input type="checkbox" name="color" value="黄色" />黄色
+                            </label>
+                            <label>
+                                <input type="checkbox" name="color" value="黑色" />黑色
+                            </label>
+                            <br>
+                            5.由于一个页面只有一个title元素和一个body元素，因此对于这两个元素的选取，JavaScript提供了方便方法：document.title和document.body。
+
+                        </div>
+                    </section>
+                </div>
+            </article>
+            <aside>
+
+            </aside>
+        </div>
+        <footer>
+                <span>首页</span>
+        </footer>
+    </div>
+</body>
+</html>
