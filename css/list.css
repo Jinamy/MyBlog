@@ -1,4 +1,5 @@
 ul{list-style: none;}
+
 body{
     color:#3c3c3c;
     font-size: 12px;
@@ -49,10 +50,28 @@ body{
     margin-left: 0;
     line-height: 40px;
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
     color:#FFFFFF;
     background-color: #1b6d85;
 }
+.menu a{
+    text-decoration: none;
+    opacity: 0.8;
+    color: #889fad;
+}
+.menu a:visited{
+    color: #889fad;
+}
+.menu a:hover{
+    color:#FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+}
+/*body.pass .menul ul li.list{
+    color:#FFFFFF;
+    opacity: 1;
+    font-size: 20px;
+}*/
 hr{
     border:1px solid #1b6d85;
     margin:0 30px 0 85px;
