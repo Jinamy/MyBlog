@@ -9,6 +9,7 @@ a{
 }
 .container{
     width:80%;
+    min-width: 1000px;
     height:650px;
     margin:0 auto;
     padding: 10px auto;
