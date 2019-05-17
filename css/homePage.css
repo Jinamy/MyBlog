@@ -2,6 +2,7 @@ body{
     font-size: 16px;
     font-family: 华文细黑, serif;
     color:#3c3c3c;
+    background-color: #f6f4ff;
 }
 a{
     text-decoration: none;
@@ -72,7 +73,7 @@ li{
     font-family: "仿宋", serif;
     font-size: 35px;
     line-height: 45px;
-    /*background-color: #0d3349;*/
+    background-color: #FFFFFF;
     box-shadow: 5px 5px 10px #8e938e;
 
 }
