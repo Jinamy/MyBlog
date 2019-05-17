@@ -2,7 +2,8 @@ ul{list-style: none;}
 
 body{
     color:#3c3c3c;
-    font-size: 12px;
+    font-size: 14px;
+    font-family: 华文细黑, serif;
 }
 .container{
     width:90%;
@@ -56,11 +57,11 @@ body{
 }
 .menu a{
     text-decoration: none;
-    opacity: 0.8;
-    color: #889fad;
+    opacity: 0.9;
+    color: #a7c6d6;
 }
 .menu a:visited{
-    color: #889fad;
+    color: #a5c1d1;
 }
 .menu a:hover{
     color:#FFFFFF;
@@ -101,12 +102,19 @@ hr{
     width: 300px;
     height: 200px;
     color: rgb(66, 147, 174);
-    border: 1px solid #4482a1;
     float: left;
-    margin:20px;
+    margin:25px;
     text-align: center;
     line-height: 200px;
     font-size: 30px;
+    border: 1px solid #a6a6a6;
+}
+.content ul li:hover{
+    width:320px;
+    height:210px;
+    margin:20px;
+    box-shadow: 5px 5px 10px #8d8d8d;
+    border:1px solid #FFFFEE;
 }
 footer{
     width: 100%;
@@ -115,6 +123,7 @@ footer{
     margin-top: 10px;
     padding-top: 10px;
     padding-bottom: 2px;
+    font-family: 幼圆, serif;
     text-align: center;
     clear: both;
 }
