@@ -1,0 +1,24 @@
+
+body{
+    color: #48555c;
+    font-family: 华文细黑, serif;
+    font-size:14px;
+}
+#T_title{
+    width:99%;
+    height: 8%;
+    margin:0 auto;
+    padding-top:5px;
+    text-align: center;
+    font-size: 18px;
+}
+#text{
+    width:99%;
+    height:fit-content;
+    margin:0 auto;
+    padding: 0 5px 5px 5px ;
+}
+a{
+    text-decoration: none;
+    color:#48555c;
+}

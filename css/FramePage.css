@@ -1,0 +1,44 @@
+iframe{
+    float:right;
+    width:100%;
+    height:fit-content;
+    min-height: 500px;
+    margin:0 auto;
+    padding:0 auto;
+    border:0;
+    /*-webkit-box-flex: 1;
+    -moz-box-flex: 1;*/
+}
+.main{
+    width:78%;
+    min-width: 800px;
+    height:fit-content;
+    min-height: 500px;
+    float:right;
+    margin:0 auto;
+    padding:0 auto;
+    border-left:1px solid #1b6d85;
+}
+.catal{
+    width:21%;
+    float: left;
+    height: fit-content;
+    min-height: 400px;
+    margin:0 auto;
+    padding-left:10px;
+    /*border:1px solid #1b6d85;*/
+}
+.catal a,.catal a:visited{
+    text-decoration: none;
+    color:#48555c;
+}
+
+.catal a:hover{
+    color: #186075;
+    font-weight: bolder;
+}
+
+footer{
+    box-shadow: 0 -5px 5px #e8e8e8;
+}
+
