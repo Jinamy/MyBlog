@@ -4,27 +4,42 @@
     <meta charset="UTF-8">
     <title>首页</title>
     <link rel="stylesheet" type="text/css" href="css/homePage.css">
+    <script src="//code.jquery.com/jquery-1.5.1.min.js"></script>
+    <script src="js/album.js"></script>
 </head>
 <body>
 <div class="container">
-    <div id="header"><span><h1> J I N A M Y </h1></span></div>
-    <div class="display">
-        <img src="img/白天.jpg" alt="">
+
+    <div id="header"><span><h1> Learning Note </h1></span></div>
+    <div class="scrollFrame">
+        <!--prev page link-->
+        <a class="prev"></a>
+        <!--next page link-->
+        <a class="next"></a>
+        <div class="box">
+        <div class="scrollList">
+            <ul>
+                <li><img class="imgs" src="img/img_0.jpg" alt=""></li>
+                <li><img class="imgs" src="img/img_1.jpg" alt=""></li>
+                <li><img class="imgs" src="img/img_2.jpg" alt=""></li>
+                <li><img class="imgs" src="img/img_3.jpg" alt=""></li>
+            </ul>
+        </div>
+        </div>
     </div>
     <div class="main">
         <div class="content">
             <ul>
                 <li><a href="passage/List.html">笔记</a> </li>
-                <li><a href="">留言板</a> </li>
+                <li><a href="">留言</a> </li>
                 <li><a href="">更多</a> </li>
             </ul>
         </div>
     </div>
-        <footer>
+    <footer>
 
-            <p>关于|设置</p>
-            <p>Copyright©2019 Jinamy All Rigth Reverse</p>
-        </footer>
+        <p>关于|设置</p><p>Copyright©2019 Jinamy All Rigth Reverse</p>
+    </footer>
 </div>
 </body>
 </html>

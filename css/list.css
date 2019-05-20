@@ -1,33 +1,42 @@
 ul{list-style: none;}
 
 body{
-    color:#3c3c3c;
+    color: #646464;
     font-size: 14px;
     font-family: 华文细黑, serif;
     background-color: #f6f4ff;
 }
 .container{
-    width:90%;
-    min-width: 1200px;
+    width:100%;
+    min-width: 1300px;
     height:fit-content;
     min-height: 700px;
     margin:0 auto;
-    padding: 10px auto;
+    padding: 10px 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
     /*background-color: #2a6496;
     border:1px solid #2a6496;*/
     clear:both;
 }
+.top{
+    width: 100%;
+    height: 20%;
+    /*border:1px solid #3c3c3c;*/
+    padding-bottom: 1px;
+    box-shadow: 0 5px 5px #e8e8e8;
+}
 .head{
     width:100%;
-    height:15%;
+    height:10%;
     margin:0 auto;
-    padding-top: 5px;
-    text-indent: 7em;
+    text-indent: 5em;
     /*border:1px solid #2a6496;*/
 }
 .head h1{
-    font-family: BrowalliaUPC serif;
-    font-size: 50px;
+    font-family: 华文楷体 serif;
+    font-weight: bolder;
+    font-size: 35px;
     color:#1b6d85;
 }
 .menu{
@@ -38,15 +47,17 @@ body{
 
 }
 .menu ul{
-    width: 90%;
+    width: 100%;
+    min-width: 1300px;
     height: 40px;
-    margin:0 30px;
-    padding-left:55px;
+    margin:0 auto;
+    padding:0;
     /*border:1px solid #021A27;*/
+    clear:both;
 }
 .menu ul li{
     display: block;
-    width:180px;
+    width:16.666%;
     height:40px;
     float: left;
     margin-left: 0;
@@ -55,6 +66,7 @@ body{
     font-size: 16px;
     color:#FFFFFF;
     background-color: #1b6d85;
+    /*resize: both;设置盒子可以自由缩放*/
 }
 .menu a{
     text-decoration: none;
@@ -74,49 +86,49 @@ body{
     opacity: 1;
     font-size: 20px;
 }*/
-hr{
-    border:1px solid #1b6d85;
-    margin:0 85px;
-    padding-top:0;
-}
 .content{
-    width:94%;
-    height: fit-content;
-    margin: 5px 30px;
-    padding-top: 10px;
-    /*border: 1px solid #070707;*/
-    clear:both;
-}
-.content ul {
-    width:95%;
+    width:100%;
     height: fit-content;
     min-height: 500px;
+    margin: 10px 0;
+    /*padding-top: 10px;*/
+    /*border: 1px solid #070707;*/
+    clear:both;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+}
+.content ul#list {
+    width:97%;
+    height: fit-content;
+    min-height: 550px;
     display: block;
-    margin:0;
+    margin:0 auto;
     /*border:1px solid #1b6d85;*/
-    text-align: center;
     clear: both;
 
 }
-.content ul li{
+.content ul#list  li{
     display: block;
     width: 300px;
     height: 200px;
     color: rgb(66, 147, 174);
     float: left;
-    margin:25px;
+    margin:40px;
     text-align: center;
     line-height: 200px;
     font-size: 30px;
     border: 1px solid rgba(30, 127, 154, 0.89);
     background-color: #FFFFFF;
+
 }
-.content ul li:hover{
+.content ul#list li:hover{
     width:320px;
     height:210px;
-    margin:20px;
+    margin:35px;
     box-shadow: 5px 5px 10px #8d8d8d;
     border:1px solid #FFFDEE;
+    font-size:40px;
+
 }
 footer{
     width: 100%;
@@ -127,5 +139,6 @@ footer{
     padding-bottom: 2px;
     font-family: 幼圆, serif;
     text-align: center;
+    font-size: 12px;
     clear: both;
 }
